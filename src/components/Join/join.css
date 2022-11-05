@@ -1,0 +1,89 @@
+.joinPage{
+    
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.joinContainer{
+    /* border: 1px solid green; */
+    background-color: black;
+    width: 50%;
+    height: 80%;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 10px 2px white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.joinContainer > h1{
+    margin: 1.5vmax 0;
+    font-style: "Roboto";
+    color: rgb(221, 221, 221);
+    padding: .5vmax 1vmax;
+    border-bottom: 2px solid black;
+}
+
+.joinContainer > img{
+    width: 150px;
+    border-radius: 15px;
+}
+.joinContainer > form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.joinContainer >  input{
+    width: 50%;
+    height: 1vmax;
+    border: none;
+    border-style: none;
+    border-radius: 2px;
+    font: 400 1vmax cursive;
+    outline: none;
+    padding: .8vmax;
+}
+
+.joinContainer >  a > button{
+    border-radius: 2px;
+    width: 10vmax;
+    height: 3vmax;
+    font: 500 1.2vmax "Roboto";
+    color: white;
+    background-color: gray;
+    border-style: none;
+}
+
+@media screen and (max-width:600px) {
+    .joinContainer{
+        width: 99%;
+    }
+    .joinContainer >  input{
+        width: 80%;
+        height: 3vmax;
+        border: none;
+        border-style: none;
+        border-radius: 2px;
+        font: 400 2.2vmax cursive;
+        outline: none;
+        padding: 1.2vmax;
+    }
+    .joinContainer >  a > button{
+        border-radius: 2px;
+        width: 20vmax;
+        height: 5vmax;
+        font: 700 2.5vmax "Roboto";
+        color: white;
+        background-color: gray;
+        border-style: none;
+    }
+}

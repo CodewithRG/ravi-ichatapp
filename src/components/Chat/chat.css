@@ -1,0 +1,143 @@
+
+.chatPage{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    /* position: fixed; */
+
+}
+
+.chatContainer{
+    border: 1px solid black;
+    width: 50%;
+    height: 90vh;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* background-image: linear-gradient(black,rgb(255, 81, 0)); */
+   background-image: url(https://i.pinimg.com/originals/ed/19/c0/ed19c0917e2d84fa2f051a8a0890e8cc.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: auto;
+    /* float: top; */
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    padding: 1vmax;
+    box-sizing: border-box;
+    /* border-radius: 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header img{
+    width: 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.header p{
+    font: 700 1.5vmax "Roboto";
+    color: black;
+}
+.header img:hover{
+    transform: scale(1.15);
+    /* border: 1px solid black; */
+}
+.chatBox{
+    border: 2px solid white;
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    padding: 1vmax;
+    overflow-y: auto;
+}
+
+.inputBox{
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    padding: 4px;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chatInput{
+    width: 88%;
+    height: 2.8vmax;
+    padding: 0 .5vmax;
+    outline: none;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    color: black;
+
+}
+
+.sendBtn{
+    width: 10%;
+    height: 2.8vmax;
+    background-color: rgb(60, 255, 249);
+    color: white;
+    font: 300 1.3vmax "Roboto";
+    transition: all .5s;
+    border: none;
+    border-style: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 5px 5px 0px;
+
+    box-sizing: border-box;
+}
+.sendBtn img:hover{
+    transition: all .5s;
+    transform: rotate(-45deg);
+}
+
+
+.sendBtn:hover{
+    background-color: rgb(60, 255, 249);
+    color: black;
+}
+
+@media screen and (max-width:600px) {
+    
+
+    .chatContainer{
+        width: 99vw;
+        height: 85vh;
+
+    }
+
+    .header p{
+        font: 700 2.5vmax "Roboto";
+    }
+
+    #chatInput {
+        width: 80%;
+        padding: 1vmax;
+        font: 300 2.4vmax "Roboto";
+        height: 7vmax;
+        box-sizing: border-box;
+    }
+    .sendBtn{
+        box-sizing: border-box;
+        width: 20%;
+        padding: 1vmax;
+        font: 300 2.4vmax "Roboto";
+        height: 7vmax;
+    }
+}
+.react-scroll-to-bottom--css-mxgaf-1tj0vk3{
+    background-color: white !important ;
+    border: 2px solid aqua !important;
+    
+}
